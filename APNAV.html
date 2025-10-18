@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araling Panlipunan Lessons</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #c9d6ff, #e2e2e2);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            color: #1e293b;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            color: #334155;
+            margin-bottom: 30px;
+            font-size: 1rem;
+        }
+
+        .menu-container {
+            /* Pinalitan ang Grid ng Flexbox para masigurong nagse-center ang huling card */
+            display: flex;
+            flex-wrap: wrap; 
+            justify-content: center; /* ITO ang nagpapagitna sa huling item */
+            align-items: flex-start;
+            
+            gap: 20px;
+            width: 80%;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Ibalik ang fixed width sa cards para pantay pa rin ang laki */
+        .lesson-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: #1e293b;
+            min-height: 120px;
+            width: 220px; /* Inayos para maging fixed ang lapad tulad ng grid minmax */
+        }
+
+        .lesson-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+            background: linear-gradient(135deg, #3b82f6, #60a5fa);
+            color: white;
+        }
+        
+        .reflection-card {
+            background: linear-gradient(135deg, #0f172a, #334155); 
+            color: #ffd700; 
+            border: 2px solid #ffd700;
+        }
+
+        .reflection-card:hover {
+            background: linear-gradient(135deg, #ffd700, #ffcc33); 
+            color: #000;
+            transform: translateY(-8px);
+        }
+
+        .lesson-card h2 {
+            margin: 0 0 10px;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            margin-top: 50px;
+            color: #475569;
+            font-size: 14px;
+        }
+
+        nav {
+            margin-top: 1.2rem;
+        }
+
+        nav a {
+            margin: 0 15px;
+            font-weight: 500;
+            transition: color 0.3s;
+            transition: transform 0.3s ease;
+            font-size: 1.5rem;
+        }
+
+        nav a:hover {
+            color: #FFD369;
+            transform:scale(1.4)
+            
+        }
+
+        a{
+        text-decoration:none;
+        color:inherit;
+        }
+    </style>
+</head>
+<body>
+    <h1>Araling Panlipunan Lessons</h1>
+    <p>Piliin ang leksiyon na nais mong aralin:</p>
+
+    <div class="menu-container">
+        <a href="AP1.html" class="lesson-card">
+            <h2>Lesson 1</h2>
+            <p>Demand</p>
+        </a>
+        <a href="AP2.html" class="lesson-card">
+            <h2>Lesson 2</h2>
+            <p>Supply</p>
+        </a>
+        <a href="AP3.html" class="lesson-card">
+            <h2>Lesson 3</h2>
+            <p>Price Elasticity</p>
+        </a>
+        <a href="AP4.html" class="lesson-card">
+            <h2>Lesson 4</h2>
+            <p>Market Equilibrium</p>
+        </a>
+        <a href="AP5.html" class="lesson-card">
+            <h2>Lesson 5</h2>
+            <p>Estruktura ng Pamilihan</p>
+        </a>
+        <a href="AP6.html" class="lesson-card">
+            <h2>Lesson 6</h2>
+            <p>Bahaging Ginagampanan ng Pamahalaan</p>
+        </a>
+        <a href="REFLECTION.html" class="lesson-card reflection-card">
+            <h2>Reflection</h2>
+            <p>Pangwakas na Repleksiyon</p>
+        </a>
+    </div>
+
+    <footer>
+        2025 Araling Panlipunan Lessons | Designed by <strong>Rolly Jr.</strong>
+    </footer>
+    <footer>
+        <nav class="ap-footer">
+            <a href="index.html">Return to Main Page</a>
+        </nav>
+    </footer>
+</body>
+</html>

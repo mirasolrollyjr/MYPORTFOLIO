@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TLE / ICT 9 – Lesson 1 Summary</title>
+
+  <!-- Import clean coding font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Fira+Code&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="PERSONAL.css">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      text-align: center;
+      padding: 30px 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      color: #0077b6;
+      border-bottom: 2px solid #90e0ef;
+      padding-bottom: 5px;
+    }
+
+    pre, code {
+      background-color: #2e2e2e;
+      color: #f8f8f2;
+      font-family: 'Fira Code', monospace;
+      font-size: 13px;
+      border-radius: 6px;
+      padding: 6px 10px;
+      line-height: 1.3;
+      overflow-x: auto;
+      white-space: pre-wrap;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #0077b6;
+      color: white;
+      margin-top: 40px;
+    }
+
+     nav {
+      margin-top: 1.2rem;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s ease;
+      text-decoration: none;
+      color: inherit;
+      font-size: 1.2rem;
+    }
+
+    nav a:hover {
+      color: #FFD369;
+      transform: scale(1.4);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #0077b6;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #e3f2fd;
+    }
+
+    .intro {
+      background: #e0f7fa;
+      border-left: 6px solid #0077b6;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Lesson 1: Introduction to CSS</h1>
+  </header>
+
+  <main>
+    <section id="intro" class="intro">
+      <h2>💡 Introduction</h2>
+      <p>
+        In this lesson, I learned about *CSS (Cascading Style Sheets)* — the language used to style and design
+        webpages. CSS controls how HTML elements are displayed on screen, allowing for better design, structure,
+        and consistency across multiple web pages. It separates content from design, making websites easier to
+        update, maintain, and more visually appealing.
+      </p>
+    </section>
+
+    <section id="summary">
+      <h2>📘 Lesson Summary</h2>
+      <p>
+        CSS stands for <b>Cascading Style Sheets</b>. It defines how HTML elements are displayed, making it possible
+        to create layouts, colors, and fonts that improve the look and feel of a website. CSS allows one stylesheet
+        to control the design of multiple web pages, saving time and effort. It also separates the structure (HTML)
+        from style, improving consistency, accessibility, and page performance. 
+      </p>
+      <p>
+        A webpage is made up of three layers:
+      </p>
+      <ul>
+        <li><b>Content Layer</b> – defines the text, images, and other elements using HTML.</li>
+        <li><b>Presentation Layer</b> – defines how content is displayed using CSS.</li>
+        <li><b>Behavior Layer</b> – defines how the page reacts to user interaction, often using JavaScript.</li>
+      </ul>
+    </section>
+
+    <section id="table">
+      <h2>📋 Summary Table</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Concept</th>
+            <th>Description</th>
+            <th>Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>CSS Meaning</td>
+            <td>Language used to style and design webpages</td>
+            <td><code>body { background-color: lightblue; }</code></td>
+          </tr>
+          <tr>
+            <td>External CSS</td>
+            <td>Styles saved in a separate file linked to HTML</td>
+            <td><code>&lt;link rel="stylesheet" href="style.css"&gt;</code></td>
+          </tr>
+          <tr>
+            <td>Presentation Layer</td>
+            <td>Defines how the webpage looks</td>
+            <td><code>p { color: navy; }</code></td>
+          </tr>
+          <tr>
+            <td>Behavior Layer</td>
+            <td>Defines interaction and dynamic content</td>
+            <td><code>button onclick="alert('Hi!')"</code></td>
+          </tr>
+          <tr>
+            <td>Content Layer</td>
+            <td>Holds main content and structure</td>
+            <td><code>&lt;h1&gt;Hello World&lt;/h1&gt;</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="benefits">
+      <h2>🌟 Benefits of Using CSS</h2>
+      <ul>
+        <li>Saves time by reusing one stylesheet across multiple pages.</li>
+        <li>Ensures consistency in layout and design.</li>
+        <li>Improves accessibility and responsiveness on different devices.</li>
+        <li>Separates content from design for easier maintenance.</li>
+        <li>Allows faster page loading and better performance.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer><nav>
+   <a href="ICT.html" >Return to ICT Lessons</a><br>
+    </nav>
+    2025 Lesson 1: Introduction to CSS | Designed by Rolly Jr.
+  </footer>
+
+</body>
+</html>
