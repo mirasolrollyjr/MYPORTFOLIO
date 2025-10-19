@@ -9,7 +9,8 @@
         body {
             background: #fff8e1;
             color: #000;
-            font-family: 'Poppins', sans-serif;
+            /* Ito ang nagtatakda ng font para sa buong body */
+            font-family: 'Poppins', sans-serif; 
         }
 
         #ap {
@@ -44,6 +45,7 @@
             border-left: 5px solid #fff3cd;
         }
 
+        /* Tiyakin na ang 'li' ay may tamang kulay at font-family (namana sa body) */
         p, li, td, th {
             color: #fff !important; 
             text-shadow: none !important;
@@ -124,12 +126,16 @@
             background: rgba(255, 255, 255, 0.4);
         }
         
-        /* Added custom style for ordered list to fit within the structure */
+        /* ADJUSTMENT PARA SA OL/LI */
         .ap-list-numbered {
-            padding: 15px 30px; /* Adjusted padding for better fit */
+            padding: 15px 30px; 
+            /* Para masigurado ang font-family, idadagdag natin ito, bagama't namana na sa body */
+            font-family: 'Poppins', sans-serif; 
         }
         .ap-list-numbered li {
              list-style-type: decimal;
+             /* Optional: Kung gusto mong gawing regular ang font-weight, dagdagan ito */
+             /* font-weight: 400; */ 
         }
     </style>
 </head>
